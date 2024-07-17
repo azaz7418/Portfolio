@@ -9,42 +9,7 @@ import About from "./About";
 
 const { TabPane } = Tabs;
 // about data
-const about = [
-  {
-    title: "",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolore iusto voluptates tempora.",
-    info: [
-      {
-        fieldName: "Name",
-        fieldValue: "Azaz Ahamed",
-      },
-      {
-        fieldName: "Phone",
-        fieldValue: "(+88) 01922-880106",
-      },
-      {
-        fieldName: "Experience",
-        fieldValue: "2+ years",
-      },
-      {
-        fieldName: "Skype",
-        fieldValue: "Azaz.o1",
-      },
-      {
-        fieldName: "Email",
-        fieldValue: "azazahamed7418@gmail.com",
-      },
-      {
-        fieldName: "Freelance",
-        fieldValue: "Available",
-      },
-      {
-        fieldName: "Language",
-        fieldValue: "Bangla, English",
-      },
-    ],
-  },
-];
+
 
 // experience data
 const experience = {
@@ -123,45 +88,7 @@ const education = {
     },
   ],
 };
-// skill data
-const skills = {
-  title: "My Skills",
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolore iusto voluptates tempora.",
-  skillList: [
-    {
-      icon: <FaHtml5 />,
-      name: "html 5",
-    },
-    {
-      icon: <FaCss3 />,
-      name: "html 5",
-    },
-    {
-      icon: <FaJs />,
-      name: "javascript",
-    },
-    {
-      icon: <FaReact />,
-      name: "react.js",
-    },
-    {
-      icon: <FaReact />,
-      name: "react.js",
-    },
-    {
-      icon: <SiTailwindcss />,
-      name: "tailwind.css",
-    },
-    {
-      icon: <FaNodeJs />,
-      name: "node.js",
-    },
-    {
-      icon: <FaFigma />,
-      name: "Figma",
-    },
-  ],
-};
+
 
 const tabs = [
   { key: "1", label: "Experience", content: "Your experience details go here..." },

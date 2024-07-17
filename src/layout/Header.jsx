@@ -23,7 +23,7 @@ const Header = () => {
         </div>
 
         {/* mobile nav */}
-        <div className="md:hidden">
+        <div className="md:hidden z-40">
           <MobileNav />
         </div>
       </div>
