@@ -4,7 +4,7 @@ import { SiTailwindcss } from "react-icons/si";
 
 const skills = {
   title: "My Skills",
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolore iusto voluptates tempora.",
+  description: " Proficient in HTML, CSS, and JavaScript, with expertise in modern frameworks like React. Strong focus on responsive design, UI/UX principles, and cross-browser compatibility. Skilled in using version control (Git), debugging tools, and optimizing performance for seamless user experiences.",
   skillList: [
     {
       icon: <FaHtml5 />,
@@ -47,7 +47,7 @@ const Skill = () => {
       <div className="flex flex-col gap-[30px]">
         <div className="flex flex-col gap-[30px] text-center md:text-left">
           <h3 className="text-4xl font-bold">{skills.title}</h3>
-          <p className=" max-w-[600px] text-white/60 mx-auto md:mx-0">{skills.description}</p>
+          <p className=" max-w-[700px] text-white/60 mx-auto md:mx-0 text-justify">{skills.description}</p>
         </div>
         <ul className="grid grid-cols-2 xl:grid-cols-4 md:grid-cols-3 sm:grid-cols-3 gap-4 md:gap-[30px] ">
           {skills.skillList.map((item, index) => {

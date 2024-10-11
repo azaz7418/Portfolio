@@ -1,6 +1,6 @@
 const about = {
   title: "About me",
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolore iusto voluptates tempora.",
+  description: "Hello! I'm Azaz Ahamed, a passionate front-end developer with a knack for creating engaging and user-friendly web experiences. I specialize in transforming ideas into beautiful, responsive, and functional websites using HTML, CSS, JavaScript, and modern front-end frameworks.",
   info: [
     {
       fieldName: "Name",
@@ -38,7 +38,7 @@ const About = () => {
     <div className="w-full text-center md:text-left">
       <div className="flex flex-col gap-[30px]">
         <h2 className="text-4xl font-bold">{about.title}</h2>
-        <p className="max-w-[600px] text-white/60 mx-auto md:mx-0">{about.description}</p>
+        <p className="max-w-[700px] text-white/60 mx-auto md:mx-0 text-justify">{about.description}</p>
         <ul className="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-2 gap-x-6 gap-y-6 max-w-[750px] mx-auto xl:mx-0 md:mx-0">
           {about.info.map((item, index) => {
             return (

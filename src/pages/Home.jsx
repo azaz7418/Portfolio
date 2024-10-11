@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import { FiDownload } from "react-icons/fi";
 import Social from "./Social";
 import Image from "./Image";

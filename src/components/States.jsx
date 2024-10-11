@@ -2,15 +2,15 @@ import CountUp from "react-countup";
 
 const states = [
   {
-    num: 12,
+    num: 1,
     text: "Years of experience",
   },
   {
-    num: 25,
+    num: 2,
     text: "Projects Completed",
   },
   {
-    num: 7,
+    num: 3,
     text: "Technologies Mastered",
   },
   {

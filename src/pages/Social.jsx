@@ -4,11 +4,11 @@ import { Link } from "react-router-dom";
 const socials = [
   {
     icon: <FiGithub />,
-    path: "",
+    path: "https://github.com/azaz7418",
   },
   {
     icon: <FiLinkedin />,
-    path: "",
+    path: "https://www.linkedin.com/in/azaz-ahamed-534b30286/",
   },
   {
     icon: <FiYoutube />,
@@ -16,7 +16,7 @@ const socials = [
   },
   {
     icon: <FiTwitter />,
-    path: "",
+    path: "https://x.com/AzazAha52294106",
   },
 ];
 const Social = () => {
@@ -25,7 +25,10 @@ const Social = () => {
       {socials.map((item) => {
         return (
           <div key={item.id} className="  ">
-            <Link to={item.path} className=" w-9 p-2 border border-accent rounded-full  font-extrabold flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500">
+            <Link
+              to={item.path}
+              className=" w-9 p-2 border border-accent rounded-full  font-extrabold flex justify-center items-center text-accent text-base hover:bg-accent hover:text-primary hover:transition-all duration-500"
+            >
               {item.icon}
             </Link>
           </div>
