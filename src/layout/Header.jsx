@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom";
+import { Link, NavLink } from "react-router-dom";
 import Nav from "./Nav";
 import MobileNav from "./MobileNav";
 
@@ -17,9 +17,9 @@ const Header = () => {
 
         <div className=" hidden md:flex items-center gap-8">
           <Nav />
-          <Link to="/contact">
+          <NavLink to="/contact">
             <button className=" button">Hire me</button>
-          </Link>
+          </NavLink>
         </div>
 
         {/* mobile nav */}

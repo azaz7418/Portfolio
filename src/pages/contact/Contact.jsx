@@ -16,7 +16,7 @@ const info = [
   {
     icon: <FaMapMarkerAlt />,
     title: "Address",
-    description: "Sathalia, Koyra, Khulna",
+    description: "Khulna, Bangladesh",
   },
 ];
 
