@@ -1,4 +1,4 @@
-import {  NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 // import { AnimatePresence, motion } from "framer-motion";
 const links = [
   {
@@ -25,8 +25,7 @@ const links = [
 const Nav = () => {
   return (
     <nav className="flex gap-8">
-
-{/* <AnimatePresence>
+      {/* <AnimatePresence>
         <motion.div
           initial={{ opacity: 1 }}
           animate={{ opacity: 0, transition: { delay: 1, duration: 0.4, ease: "easeInOut" } }}
@@ -35,22 +34,21 @@ const Nav = () => {
           />
           
       </AnimatePresence> */}
-      {links.map((link ) => {
+      {links.map((link) => {
         return (
-          
           <NavLink
             key={link.id}
             to={link.path}
-            className={({ isActive,  }) => {
-              return isActive ? " text-accent border-b-2 border-accent capitalize" : "  capitalize font-medium hover:text-accent transition-all";
+            className={({ isActive }) => {
+              return isActive
+                ? " text-accent border-b-2 border-accent capitalize"
+                : "  capitalize font-medium hover:text-accent transition-all";
             }}
           >
             {link.name}
           </NavLink>
         );
       })}
-
-      
     </nav>
   );
 };

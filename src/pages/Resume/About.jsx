@@ -1,6 +1,7 @@
 const about = {
   title: "About me",
-  description: "Hello! I'm Azaz Ahamed, a passionate front-end developer with a knack for creating engaging and user-friendly web experiences. I specialize in transforming ideas into beautiful, responsive, and functional websites using HTML, CSS, JavaScript, and modern front-end frameworks.",
+  description:
+    "Hello! I'm Azaz Ahamed, a passionate front-end developer with a knack for creating engaging and user-friendly web experiences. I specialize in transforming ideas into beautiful, responsive, and functional websites using HTML, CSS, JavaScript, and modern front-end frameworks.",
   info: [
     {
       fieldName: "Name",

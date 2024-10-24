@@ -21,9 +21,7 @@ const info = [
 ];
 
 const Contact = () => {
-  //   const handleChange = (event) => {
-  //     setSelectedService(event.target.value);
-  //   };
+  
   return (
     <motion.div
       initial={{ opacity: 0 }}
@@ -84,6 +82,4 @@ const Contact = () => {
     </motion.div>
   );
 };
-// flex w-full items-center justify-between rounded-md border border-opacity-10 bg-primary px-4 py-4 text-base text-white placeholder-opacity-10 focus:border-accent outline-none
-
 export default Contact;

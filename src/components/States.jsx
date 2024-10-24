@@ -13,10 +13,7 @@ const states = [
     num: 3,
     text: "Technologies Mastered",
   },
-  {
-    num: 200,
-    text: "Code Commits",
-  },
+  
 ];
 
 const States = () => {

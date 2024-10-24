@@ -4,7 +4,8 @@ import { SiTailwindcss } from "react-icons/si";
 
 const skills = {
   title: "My Skills",
-  description: " Proficient in HTML, CSS, and JavaScript, with expertise in modern frameworks like React. Strong focus on responsive design, UI/UX principles, and cross-browser compatibility. Skilled in using version control (Git), debugging tools, and optimizing performance for seamless user experiences.",
+  description:
+    " Proficient in HTML, CSS, and JavaScript, with expertise in modern frameworks like React. Strong focus on responsive design, UI/UX principles, and cross-browser compatibility. Skilled in using version control (Git), debugging tools, and optimizing performance for seamless user experiences.",
   skillList: [
     {
       icon: <FaHtml5 />,

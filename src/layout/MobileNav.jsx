@@ -2,7 +2,6 @@ import { useState } from "react";
 import { CiMenuFries } from "react-icons/ci";
 import { RxCross2 } from "react-icons/rx";
 import { Link, NavLink } from "react-router-dom";
-// import { AnimatePresence, motion } from "framer-motion";
 const links = [
   {
     name: "home",
@@ -40,12 +39,7 @@ const MobileNav = () => {
           <div onClick={navMenue} className=" col-span-2 bg-transparent   "></div>
           <div className=" col-span-4 bg-black  h-screen">
             <div className=" flex justify-between items-center p-5">
-              {/* logo */}
-              <Link to="/">
-                {/* <h2 className=" text-xl font-semibold">
-                  Azaz<span className=" text-accent">.</span>
-                </h2> */}
-              </Link>
+              
 
               <RxCross2 onClick={navMenue} className=" text-[25px]  text-accent" />
             </div>

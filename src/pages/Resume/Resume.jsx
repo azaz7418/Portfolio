@@ -1,52 +1,28 @@
-import { FaCss3, FaFigma, FaHtml5, FaJs, FaNodeJs, FaReact } from "react-icons/fa";
 import { motion } from "framer-motion";
-
-import { SiTailwindcss } from "react-icons/si";
-import { Tabs } from "antd";
 import { useState } from "react";
 import Skill from "./Skill";
 import About from "./About";
 
-const { TabPane } = Tabs;
+// const { TabPane } = Tabs;
 // about data
-
 
 // experience data
 const experience = {
   icon: "/assets/resume/badge.svg",
   title: "My Experience",
-  description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Quae dolore iusto voluptates tempora.",
+  description:
+    "Developed and maintained responsive websites using HTML, CSS, and JavaScript, ensuring optimal user experience across devices. Collaborated with designers and back-end developers to deliver visually appealing and functional web applications.",
   items: [
     {
-      company: "company Name",
-      position: "Position Name",
+      company: "No Job Experience",
+      position: "Fresher",
       duration: "Start - End year",
     },
-    {
-      company: "company Name",
-      position: "Position Name",
-      duration: "Start - End year",
-    },
-    {
-      company: "company Name",
-      position: "Position Name",
-      duration: "Start - End year",
-    },
-    {
-      company: "company Name",
-      position: "Position Name",
-      duration: "Start - End year",
-    },
-    {
-      company: "company Name",
-      position: "Position Name",
-      duration: "Start - End year",
-    },
-    {
-      company: "company Name",
-      position: "Position Name",
-      duration: "Start - End year",
-    },
+    // {
+    //   company: "company Name",
+    //   position: "Position Name",
+    //   duration: "Start - End year",
+    // },
   ],
 };
 
@@ -58,37 +34,16 @@ const education = {
   items: [
     {
       Institution: "Programming Hero",
-      degree: "Front-end Web Development",
-      duration: "2023",
+      degree: "Web Development",
+      duration: "2022-2023",
     },
     {
-      Institution: "Programming Hero",
-      degree: "Front-end Web Development",
-      duration: "2023",
-    },
-    {
-      Institution: "Programming Hero",
-      degree: "Front-end Web Development",
-      duration: "2023",
-    },
-    {
-      Institution: "Programming Hero",
-      degree: "Front-end Web Development",
-      duration: "2023",
-    },
-    {
-      Institution: "Programming Hero",
-      degree: "Front-end Web Development",
-      duration: "2023",
-    },
-    {
-      Institution: "Programming Hero",
-      degree: "Front-end Web Development",
-      duration: "2023",
+      Institution: "BSMRSTU",
+      degree: "BBA in Finance & Banking",
+      duration: "2020-2024",
     },
   ],
 };
-
 
 const tabs = [
   { key: "1", label: "Experience", content: "Your experience details go here..." },
@@ -130,7 +85,9 @@ const Resume = () => {
                       {tab.label === "Experience" ? (
                         <div className=" flex flex-col gap-[30px] text-center md:text-left">
                           <h2 className="text-4xl font-bold">{experience.title}</h2>
-                          <p className="max-w-[600px] text-white/60 mx-auto md:mx-0">{experience.description}</p>
+                          <p className="max-w-[700px] text-white/60 text-justify mx-auto md:mx-0">
+                            {experience.description}
+                          </p>
                           <div className="h-[300px] overflow-scroll">
                             <ul className=" grid grid-cols-1 md:grid-cols-2 gap-[25px]">
                               {experience.items.map((item, index) => {

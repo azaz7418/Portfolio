@@ -7,7 +7,6 @@ import pdf from "../assets/Resume.pdf";
 import { downloadFile } from "../utilities/Utilites";
 
 const Home = () => {
-  
   return (
     <section>
       <div className="container mx-auto">
@@ -27,7 +26,7 @@ const Home = () => {
             {/* Button and Social */}
             <div className=" flex flex-col md:flex-row xl:flex-row items-center gap-8">
               <button className=" button outline-0 hover:text-primary bg-transparent border border-solid border-spacing-1 border-accent text-accent uppercase flex gap-2">
-                <span onClick={()=>downloadFile(pdf) } className="">
+                <span onClick={() => downloadFile(pdf)} className="">
                   Download CV
                 </span>
                 <FiDownload className=" text-xl" />
