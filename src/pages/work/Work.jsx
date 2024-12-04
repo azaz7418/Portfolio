@@ -11,7 +11,7 @@ import WorkSliderButton from "./WorkSliderButton";
 const projects = [
   {
     num: "01",
-    category: "Frontend",
+    category: "Portfolio",
     title: "Project 1",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque laborum, distinctio expedita dign",
     stack: [
@@ -26,7 +26,7 @@ const projects = [
       },
     ],
     image: "/assets/work/thumb1.png",
-    live: "",
+    live: "https://azaz7418.netlify.app/",
     gitHub: "",
   },
   {
@@ -156,15 +156,17 @@ const Work = () => {
                       <div className=" absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                       {/* image */}
                       <div className="relative h-full w-full">
-                        <img src={project.image} alt="" className=" h-full w-full object-cover" />
+                        <img src={project.image} alt="" className=" h-full w-full " />
                       </div>
                     </div>
                   </SwiperSlide>
                 );
               })}
               {/* slider buttons */}
-              <WorkSliderButton containerStyles=" flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] z-20 xl:bottom-0 md:bottom-0 w-full justify-between xl:w-max md:w-max xl:justify-none md:justify-none" btnStyles=" bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all "/>
-
+              <WorkSliderButton
+                containerStyles=" flex gap-2 absolute right-0 bottom-[calc(50%_-_22px)] z-20 xl:bottom-0 md:bottom-0 w-full justify-between xl:w-max md:w-max xl:justify-none md:justify-none"
+                btnStyles=" bg-accent hover:bg-accent-hover text-primary text-[22px] w-[44px] h-[44px] flex justify-center items-center transition-all "
+              />
             </Swiper>
           </div>
         </div>

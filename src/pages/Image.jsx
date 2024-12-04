@@ -9,11 +9,12 @@ const Image = () => {
                 <motion.div 
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1, transition: { delay: 1.4, duration: 0.4, ease: "easeInOut" } }}
-                className=" w-[298px] h-[298px] xl:w-[448px] md:w-[448px] xl:h-[448px] md:h-[448px] mix-blend-lighten absolute ">
+                className=" w-full h-[298px] xl:h-[448px] md:h-[448px] mix-blend-lighten absolute ">
                     <img 
                     src="/image/photo.png" 
                     alt="Azaz Ahamed" 
-                    className=" object-contain  " />
+                    className=" object-contain  " 
+                    />
                 </motion.div>
                 {/* circle */}
 

@@ -9,7 +9,7 @@ const about = {
     },
     {
       fieldName: "Phone",
-      fieldValue: "(+88) 01922-880106",
+      fieldValue:  <a href="tel:+8801922 880106">(+88) 01922 880106</a>,
     },
     {
       fieldName: "Experience",
@@ -21,7 +21,7 @@ const about = {
     },
     {
       fieldName: "Email",
-      fieldValue: "azazahamed7418@gmail.com",
+      fieldValue: <a href="mailto:azazahamed7418@gmail.com">azazahamed7418@gmail.com</a>,
     },
     {
       fieldName: "Freelance",

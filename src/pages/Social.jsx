@@ -1,4 +1,4 @@
-import { FiGithub, FiLinkedin, FiTwitter, FiYoutube } from "react-icons/fi";
+import { FiGithub, FiLinkedin, FiTwitter } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
 const socials = [
@@ -10,10 +10,10 @@ const socials = [
     icon: <FiLinkedin />,
     path: "https://www.linkedin.com/in/azaz-ahamed-534b30286/",
   },
-  {
-    icon: <FiYoutube />,
-    path: "",
-  },
+  // {
+  //   icon: <FiYoutube />,
+  //   path: "",
+  // },
   {
     icon: <FiTwitter />,
     path: "https://x.com/AzazAha52294106",

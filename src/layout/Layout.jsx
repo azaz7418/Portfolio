@@ -8,7 +8,7 @@ import { Outlet } from "react-router-dom";
 const Layout = () => {
   return (
     <body className=" body *:p-[15px] *:m-0 *:box-border h-full  flex flex-col">
-      <Header></Header>
+      <Header/>
         <Outlet /> 
       {/* <PageTransition>
       </PageTransition> */}
