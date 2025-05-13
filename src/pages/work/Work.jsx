@@ -11,7 +11,7 @@ import WorkSliderButton from "./WorkSliderButton";
 const projects = [
   {
     num: "01",
-    category: "Portfolio",
+    category: "Mess Metrics",
     title: "Project 1",
     description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque laborum, distinctio expedita dign",
     stack: [
@@ -26,7 +26,7 @@ const projects = [
       },
     ],
     image: "/assets/work/thumb1.png",
-    live: "https://azaz7418.netlify.app/",
+    live: "https://mess-metrics.netlify.app/",
     gitHub: "",
   },
   {
@@ -156,7 +156,7 @@ const Work = () => {
                       <div className=" absolute top-0 bottom-0 w-full h-full bg-black/10 z-10"></div>
                       {/* image */}
                       <div className="relative h-full w-full">
-                        <img src={project.image} alt="" className=" h-full w-full " />
+                        <img src={item.image} alt="" className=" h-full w-full " />
                       </div>
                     </div>
                   </SwiperSlide>
