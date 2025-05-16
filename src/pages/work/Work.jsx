@@ -13,7 +13,8 @@ const projects = [
     num: "01",
     category: "Mess Metrics",
     title: "Project 1",
-    description: "Developed a system with custom authentication and authorization. Only the manager has access to perform CRUD operations on all members' data. The system allows the manager to add or remove members and calculate monthly accounts.",
+    description:
+      "Developed a system with custom authentication and authorization. Only the manager has access to perform CRUD operations on all members' data. The system allows the manager to add or remove members and calculate monthly accounts.",
     // Bootstrap, CSS, React.js, React Router, Redux, Vite js, Express, Mongo and Mongoose, JWT, Bcrypt.
     stack: [
       {
@@ -43,7 +44,8 @@ const projects = [
     num: "02",
     category: "Frontend",
     title: "Project 2",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque laborum, distinctio expedita dign",
+    description:
+      "A React-based movie/TV show browsing application with modern UI components. Features categorized navigation for movies/TV shows with sub-menus and search functionality. Uses React Router for navigation, Tailwind CSS for styling, and Redux for state management.",
     stack: [
       {
         name: "React.js",
@@ -52,12 +54,12 @@ const projects = [
         name: "Tailwind.css",
       },
       {
-        name: "Node.js",
+        name: "Redux",
       },
     ],
     image: "/assets/work/thumb2.png",
-    live: "",
-    gitHub: "",
+    live: "https://movie-review-task.netlify.app/",
+    gitHub: "https://github.com/azaz7418/Movie-Review",
   },
   {
     num: "03",
