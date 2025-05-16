@@ -13,16 +13,26 @@ const projects = [
     num: "01",
     category: "Mess Metrics",
     title: "Project 1",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque laborum, distinctio expedita dign",
+    description: "Developed a system with custom authentication and authorization. Only the manager has access to perform CRUD operations on all members' data. The system allows the manager to add or remove members and calculate monthly accounts.",
+    // Bootstrap, CSS, React.js, React Router, Redux, Vite js, Express, Mongo and Mongoose, JWT, Bcrypt.
     stack: [
       {
-        name: "Html 5",
+        name: "Bootstrap",
       },
       {
         name: "Css 3",
       },
       {
-        name: "Javascript",
+        name: "React.js",
+      },
+      {
+        name: "React Router",
+      },
+      {
+        name: "Express",
+      },
+      {
+        name: "Mongo and Mongoose",
       },
     ],
     image: "/assets/work/thumb1.png",
