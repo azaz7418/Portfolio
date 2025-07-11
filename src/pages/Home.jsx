@@ -3,7 +3,7 @@ import { FiDownload } from "react-icons/fi";
 import Social from "./Social";
 import Image from "./Image";
 import States from "../components/States";
-import pdf from "../assets/Resume.pdf";
+import pdf from "../assets/Azaz_Ahamed_Resume.pdf";
 import { downloadFile } from "../utilities/Utilites";
 
 const Home = () => {
