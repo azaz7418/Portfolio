@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
-import { BsArrowDownRight } from "react-icons/bs";
-import { Link } from "react-router-dom";
+// import { BsArrowDownRight } from "react-icons/bs";
+// import { Link } from "react-router-dom";
 
 const services = [
   {
@@ -42,7 +42,7 @@ const services = [
 
 const Services = () => {
   return (
-    <section className="min-h-[80vh] flex flex-col justify-center py-12 xl:py-0 md:py-0">
+    <section className=" h-full bg-primary">
       <div className=" container mx-auto">
         <motion.div
           initial={{ opacity: 0 }}

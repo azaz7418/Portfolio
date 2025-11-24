@@ -58,7 +58,7 @@ const Resume = () => {
     <motion.div
       initial={{ opacity: 0 }}
       animate={{ opacity: 1, transition: { delay: 1, duration: 0.4, ease: "easeIn" } }}
-      className="min-h-[80vh] flex items-center justify-center py-12 md:py-0"
+      className=" h-full "
       //   exit={{ opacity: 0 }}
     >
       <div className="container mx-auto">
@@ -81,7 +81,7 @@ const Resume = () => {
               {tabs.map(
                 (tab) =>
                   tab.key === activeTab && (
-                    <div className="w-full" key={tab.key}>
+                    <div className="w-full max-h-[70vh] overflow-y-auto" key={tab.key}>
                       {tab.label === "Experience" ? (
                         <div className=" flex flex-col gap-[30px] text-center md:text-left">
                           <h2 className="text-4xl font-bold">{experience.title}</h2>
