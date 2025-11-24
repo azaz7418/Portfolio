@@ -7,6 +7,7 @@ import Layout from './layout/Layout.jsx'
 import Services from './pages/services/Services.jsx'
 import Resume from './pages/Resume/Resume.jsx'
 import Work from './pages/work/Work.jsx'
+import ProjectDetail from './pages/work/ProjectDetail.jsx'
 import Contact from './pages/contact/Contact.jsx'
 
 const router = createBrowserRouter(
@@ -16,6 +17,7 @@ const router = createBrowserRouter(
   <Route path='/services' element={<Services/>} />
   <Route path='/resume' element={<Resume/>} />
   <Route path='/work' element={<Work/>} />
+  <Route path='/work/:id' element={<ProjectDetail/>} />
   <Route path='/contact' element={<Contact/>} />
  </Route>
   )
