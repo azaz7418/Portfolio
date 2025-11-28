@@ -8,7 +8,6 @@ import pdf from "../assets/Azaz_Ahamed_Resume.pdf";
 import { downloadFile } from "../utilities/Utilites";
 
 const Home = () => {
-  // Data array for the bottom navigation cards
   const navItems = [
     {
       title: "Services",
@@ -39,25 +38,20 @@ const Home = () => {
   return (
     <section className=" flex items-center justify-center py-8 md:py-10 xl:py-0">
       <div className="container mx-auto px-4 md:px-6 xl:px-4">
-        {/* Main Grid Layout to match Image Structure */}
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-start">
           {/* --- LEFT COLUMN: Profile Card --- */}
-          {/* Matches the dark card on the left of your image */}
           <div className="md:col-span-4 w-full bg-[#1c1c22] rounded-[20px] md:rounded-[30px] p-6 md:p-8 border border-white/10 flex flex-col items-center text-center shadow-2xl relative overflow-hidden">
             {/* --- NEW ANIMATION: ROTATING NEBULA --- */}
-            {/* This creates a large, slow-spinning gradient mesh behind the glass */}
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200%] h-[200%] opacity-20 pointer-events-none">
               <div
                 className="w-full h-full bg-[conic-gradient(from_90deg_at_50%_50%,#000000_0%,theme('colors.accent.DEFAULT')_50%,#000000_100%)] animate-spin blur-[100px]"
-                style={{ animationDuration: "20s" }} // Very slow, smooth rotation
+                style={{ animationDuration: "20s" }}
               ></div>
             </div>
 
-            {/* Noise Texture (Optional: Adds a matte finish to prevent color banding) */}
             <div className="absolute inset-0 opacity-[0.03] bg-[url('https://grainy-gradients.vercel.app/noise.svg')] mix-blend-overlay pointer-events-none"></div>
             {/* --- ANIMATION END --- */}
 
-            {/* Content Wrapper (Backdrop blur makes the text pop against the nebula) */}
             <div className="relative z-10 w-full flex flex-col items-center bg-[#1c1c22]/10 backdrop-blur-sm rounded-[20px] p-4">
               {/* Profile Image Wrapper */}
               <div className="w-full aspect-square rounded-[20px] overflow-hidden mb-4 md:mb-6 border-2 border-white/5 shadow-lg">
@@ -87,13 +81,12 @@ const Home = () => {
 
           {/* --- RIGHT COLUMN: Content & Stats --- */}
           <div className="md:col-span-8 flex flex-col justify-center space-y-6 md:space-y-8 xl:pl-8">
-            {/* Header Text Section */}
             <div>
-              <h1 className="text-3xl md:text-4xl xl:text-6xl font-bold text-white mb-4 md:mb-6 leading-tight">
+              <h1 className="text-3xl md:text-4xl xl:text-6xl font-bold text-white mb-4 md:mb-6 leading-tight text-center md:text-left">
                 Crafting Elegant <br />
                 <span className="text-accent">Digital Experiences</span>
               </h1>
-              <p className="text-white/60 text-base md:text-lg leading-relaxed max-w-2xl">
+              <p className="text-white/60 text-base md:text-lg leading-relaxed max-w-2xl text-center md:text-left">
                 I excel at crafting elegant digital experiences and I am proficient in various programming languages and
                 technologies. Delivering high-performance apps with intuitive UX/UI and clean code.
               </p>
