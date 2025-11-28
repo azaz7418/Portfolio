@@ -60,7 +60,7 @@ const Home = () => {
                Frontend Developer
             </span>
             <p className="text-white/50 text-xs md:text-sm mb-4 md:mb-6">
-              Dhaka, Bangladesh
+              Khulna, Bangladesh
             </p>
 
             {/* Social Icons (Moved inside card) */}
@@ -71,7 +71,7 @@ const Home = () => {
             {/* Primary Action Button (Download CV) */}
             <button
               onClick={() => downloadFile(pdf)}
-              className="w-full uppercase flex items-center justify-center gap-2 px-4 py-3 md:px-6 md:py-4 rounded-full bg-accent text-primary font-bold hover:bg-accent/80 transition-all duration-300 text-sm md:text-base"
+              className="w-full uppercase flex items-center justify-center gap-2 px-4 py-3 md:px-6 md:py-4 rounded-full bg-gradient-to-r from-accent to-accent-hover text-primary font-bold hover:bg-gradient-to-r hover:from-accent/80 hover:to-accent/70 transition-all duration-300 text-sm md:text-base"
             >
               <span>Download CV</span>
               <FiDownload className="text-lg md:text-xl" />
