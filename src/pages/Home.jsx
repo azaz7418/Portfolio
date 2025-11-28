@@ -43,32 +43,46 @@ const Home = () => {
         <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-start">
           {/* --- LEFT COLUMN: Profile Card --- */}
           {/* Matches the dark card on the left of your image */}
-          <div className="md:col-span-4 w-full bg-[#1c1c22] rounded-[20px] md:rounded-[30px] p-6 md:p-8 border border-white/10 flex flex-col items-center text-center shadow-xl">
-            {/* Profile Image Wrapper */}
-            <div className="w-full  aspect-square rounded-[20px] overflow-hidden mb-4 md:mb-6">
-              <Image />
+          <div className="md:col-span-4 w-full bg-[#1c1c22] rounded-[20px] md:rounded-[30px] p-6 md:p-8 border border-white/10 flex flex-col items-center text-center shadow-2xl relative overflow-hidden">
+            {/* --- NEW ANIMATION: ROTATING NEBULA --- */}
+            {/* This creates a large, slow-spinning gradient mesh behind the glass */}
+            <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[200%] h-[200%] opacity-20 pointer-events-none">
+              <div
+                className="w-full h-full bg-[conic-gradient(from_90deg_at_50%_50%,#000000_0%,theme('colors.accent.DEFAULT')_50%,#000000_100%)] animate-spin blur-[100px]"
+                style={{ animationDuration: "20s" }} // Very slow, smooth rotation
+              ></div>
             </div>
 
-            {/* Name & Role */}
-            <h2 className="text-xl md:text-2xl font-bold text-white mb-1">Azaz Ahamed</h2>
-            <span className="text-accent font-medium tracking-wide text-xs md:text-sm uppercase mb-2 block">
-              Frontend Developer
-            </span>
-            <p className="text-white/50 text-xs md:text-sm mb-4 md:mb-6">Khulna, Bangladesh</p>
+            {/* Noise Texture (Optional: Adds a matte finish to prevent color banding) */}
+            <div className="absolute inset-0 opacity-[0.03] bg-[url('https://grainy-gradients.vercel.app/noise.svg')] mix-blend-overlay pointer-events-none"></div>
+            {/* --- ANIMATION END --- */}
 
-            {/* Social Icons (Moved inside card) */}
-            <div className="mb-6 md:mb-8 flex justify-center w-full">
-              <Social />
+            {/* Content Wrapper (Backdrop blur makes the text pop against the nebula) */}
+            <div className="relative z-10 w-full flex flex-col items-center bg-[#1c1c22]/10 backdrop-blur-sm rounded-[20px] p-4">
+              {/* Profile Image Wrapper */}
+              <div className="w-full aspect-square rounded-[20px] overflow-hidden mb-4 md:mb-6 border-2 border-white/5 shadow-lg">
+                <Image />
+              </div>
+
+              <h2 className="text-xl md:text-2xl font-bold text-white mb-1">Azaz Ahamed</h2>
+              <span className="text-accent font-medium tracking-wide text-xs md:text-sm uppercase mb-2 block">
+                Frontend Developer
+              </span>
+              <p className="text-white/50 text-xs md:text-sm mb-4 md:mb-6">Khulna, Bangladesh</p>
+
+              {/* Social Icons */}
+              <div className="mb-6 md:mb-8 flex justify-center w-full">
+                <Social />
+              </div>
+
+              <button
+                onClick={() => downloadFile(pdf)}
+                className="w-full uppercase flex items-center justify-center gap-2 px-4 py-3 md:px-6 md:py-4 rounded-full bg-gradient-to-r from-accent to-accent-hover text-primary font-bold hover:shadow-[0_0_20px_rgba(0,255,150,0.3)] transition-all duration-300 text-sm md:text-base"
+              >
+                <span>Download CV</span>
+                <FiDownload className="text-lg md:text-xl" />
+              </button>
             </div>
-
-            {/* Primary Action Button (Download CV) */}
-            <button
-              onClick={() => downloadFile(pdf)}
-              className="w-full uppercase flex items-center justify-center gap-2 px-4 py-3 md:px-6 md:py-4 rounded-full bg-gradient-to-r from-accent to-accent-hover text-primary font-bold hover:bg-gradient-to-r hover:from-accent/80 hover:to-accent/70 transition-all duration-300 text-sm md:text-base"
-            >
-              <span>Download CV</span>
-              <FiDownload className="text-lg md:text-xl" />
-            </button>
           </div>
 
           {/* --- RIGHT COLUMN: Content & Stats --- */}
