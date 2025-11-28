@@ -12,13 +12,13 @@ const Home = () => {
   const navItems = [
     {
       title: "Services",
-      desc: "Web development & UI design",
+      desc: "Web dev & UI design",
       path: "/services",
       icon: <FiLayers />,
     },
     {
       title: "Resume",
-      desc: "My professional journey",
+      desc: "Professional journey",
       path: "/resume",
       icon: <FiUser />,
     },
@@ -37,85 +37,102 @@ const Home = () => {
   ];
 
   return (
-    <section className="h-full">
-      <div className="container mx-auto">
-        
-        {/* --- Hero Section --- */}
-        <div className="flex flex-col md:flex-row xl:flex-row items-center justify-between pt-8 pb-4 md:pt-12 md:pb-12 xl:pt-12 xl:pb-24">
+    <section className=" flex items-center justify-center py-8 md:py-10 xl:py-0">
+      <div className="container mx-auto px-4 md:px-6 xl:px-4">
 
-          {/* Text Content */}
-          <div className="text-center md:text-left xl:text-left order-2 md:order-none xl:order-none">
-            <span className="text-xl font-medium tracking-widest text-white/60 mb-2 block">
-              Frontend Developer
+        {/* Main Grid Layout to match Image Structure */}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-6 md:gap-8 items-start">
+
+          {/* --- LEFT COLUMN: Profile Card --- */}
+          {/* Matches the dark card on the left of your image */}
+          <div className="md:col-span-4 w-full bg-[#1c1c22] rounded-[20px] md:rounded-[30px] p-6 md:p-8 border border-white/10 flex flex-col items-center text-center shadow-xl">
+
+            {/* Profile Image Wrapper */}
+            <div className="w-full  aspect-square rounded-[20px] overflow-hidden mb-4 md:mb-6">
+               <Image />
+            </div>
+
+            {/* Name & Role */}
+            <h2 className="text-xl md:text-2xl font-bold text-white mb-1">
+              Azaz Ahamed
+            </h2>
+            <span className="text-accent font-medium tracking-wide text-xs md:text-sm uppercase mb-2 block">
+               Frontend Developer
             </span>
-            
-            <h1 className="h1 mb-6">
-              Hello I'm <br />
-              <span className="text-accent">Azaz Ahamed</span>
-            </h1>
-            
-            <p className="max-w-[500px] mb-9 text-white/80 leading-relaxed mx-auto xl:mx-0">
-              I excel at crafting elegant digital experiences and I am proficient
-              in various programming languages and technologies.
+            <p className="text-white/50 text-xs md:text-sm mb-4 md:mb-6">
+              Dhaka, Bangladesh
             </p>
 
-            {/* Action Area */}
-            <div className="flex flex-col md:flex-row xl:flex-row items-center gap-8">
-              <button
-                onClick={() => downloadFile(pdf)}
-                className="uppercase flex items-center gap-2 px-6 py-3 rounded-full border border-accent text-accent hover:bg-accent hover:text-primary transition-all duration-500 shadow-[0px_0px_20px_rgba(0,255,153,0.1)] hover:shadow-[0px_0px_30px_rgba(0,255,153,0.4)]"
-              >
-                <span>Download CV</span>
-                <FiDownload className="text-xl" />
-              </button>
-              
-              <div className="mb-8 xl:mb-0">
-                <Social />
-              </div>
+            {/* Social Icons (Moved inside card) */}
+            <div className="mb-6 md:mb-8 flex justify-center w-full">
+              <Social />
+            </div>
+
+            {/* Primary Action Button (Download CV) */}
+            <button
+              onClick={() => downloadFile(pdf)}
+              className="w-full uppercase flex items-center justify-center gap-2 px-4 py-3 md:px-6 md:py-4 rounded-full bg-accent text-primary font-bold hover:bg-accent/80 transition-all duration-300 text-sm md:text-base"
+            >
+              <span>Download CV</span>
+              <FiDownload className="text-lg md:text-xl" />
+            </button>
+          </div>
+
+
+          {/* --- RIGHT COLUMN: Content & Stats --- */}
+          <div className="md:col-span-8 flex flex-col justify-center space-y-6 md:space-y-8 xl:pl-8">
+
+            {/* Header Text Section */}
+            <div>
+              <h1 className="text-3xl md:text-4xl xl:text-6xl font-bold text-white mb-4 md:mb-6 leading-tight">
+                Crafting Elegant <br />
+                <span className="text-accent">Digital Experiences</span>
+              </h1>
+              <p className="text-white/60 text-base md:text-lg leading-relaxed max-w-2xl">
+                I excel at crafting elegant digital experiences and I am proficient
+                in various programming languages and technologies. Delivering high-performance apps with intuitive UX/UI and clean code.
+              </p>
+            </div>
+
+            {/* Stats Section */}
+            <div className="py-4 border-y border-white/5">
+               <States />
+            </div>
+
+            {/* Navigation / Links Grid */}
+            <div className="space-y-4">
+                <p className="text-white/40 font-medium text-xs md:text-sm uppercase tracking-widest">
+                    Explore My World
+                </p>
+
+                <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+                    {navItems.map((item, index) => (
+                        <Link
+                        to={item.path}
+                        key={index}
+                        className="group bg-[#232329] border border-white/5 p-4 md:p-5 rounded-2xl hover:border-accent transition-all duration-300 flex items-center justify-between"
+                        >
+                        <div className="flex items-center gap-3 md:gap-4">
+                            <div className="text-xl md:text-2xl text-white/50 group-hover:text-accent transition-colors">
+                                {item.icon}
+                            </div>
+                            <div>
+                                <h3 className="text-base md:text-lg font-bold text-white group-hover:text-accent transition-colors">
+                                    {item.title}
+                                </h3>
+                                <p className="text-xs text-white/40">{item.desc}</p>
+                            </div>
+                        </div>
+
+                        <div className="w-8 h-8 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-accent transition-all duration-300">
+                            <FiArrowUpRight className="text-white text-sm group-hover:text-primary group-hover:rotate-45 transition-transform duration-300" />
+                        </div>
+                        </Link>
+                    ))}
+                </div>
             </div>
           </div>
 
-          {/* Hero Image */}
-          <div className="order-1 md:order-none xl:order-none mb-8 md:mb-0 xl:mb-0 relative">
-            <Image />
-          </div>
-        </div>
-      </div>
-
-      {/* --- Stats Section --- */}
-      <States />
-
-      {/* --- Navigation Grid (Redesigned) --- */}
-      <div className="container mx-auto py-4 border-t border-white/10 mt-10">
-        <div className="flex flex-col items-center mb-12">
-          <h2 className="text-3xl font-bold text-white">Explore My World</h2>
-          <p className="text-white/60 mt-2">Navigate through my professional details</p>
-        </div>
-
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-          {navItems.map((item, index) => (
-            <Link
-              to={item.path}
-              key={index}
-              className="group bg-[#232329] border border-white/5 p-6 rounded-xl hover:border-accent transition-all duration-300 hover:-translate-y-2"
-            >
-              {/* Card Header */}
-              <div className="flex justify-between items-start mb-4">
-                <div className="text-3xl text-white/50 group-hover:text-accent transition-colors duration-300">
-                  {item.icon}
-                </div>
-                <div className="w-10 h-10 rounded-full bg-white/5 flex items-center justify-center group-hover:bg-accent transition-all duration-300">
-                  <FiArrowUpRight className="text-white text-xl group-hover:text-primary group-hover:rotate-45 transition-transform duration-300" />
-                </div>
-              </div>
-
-              {/* Card Content */}
-              <h3 className="text-xl font-bold text-white mb-1 group-hover:text-accent transition-colors">
-                {item.title}
-              </h3>
-              <p className="text-sm text-white/60 leading-snug">{item.desc}</p>
-            </Link>
-          ))}
         </div>
       </div>
     </section>

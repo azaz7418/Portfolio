@@ -6,21 +6,21 @@ const Image = () => {
             <motion.div initial={{ opacity: 0 }}
             animate={{ opacity: 1, transition: { delay: 1, duration: 0.4, ease: "easeIn" } }}
             >
-                <motion.div 
+                <motion.div
                 initial={{ opacity: 0 }}
                 animate={{ opacity: 1, transition: { delay: 1.4, duration: 0.4, ease: "easeInOut" } }}
-                className=" w-full h-[298px] xl:h-[448px] md:h-[448px] mix-blend-lighten absolute ">
-                    <img 
-                    src="/image/photo.png" 
-                    alt="Azaz Ahamed" 
-                    className=" object-contain  " 
+                className=" w-full h-full mix-blend-lighten absolute rounded-full overflow-hidden">
+                    <img
+                    src="/image/photo.png"
+                    alt="Azaz Ahamed"
+                    className=" object-cover w-full h-full "
                     />
                 </motion.div>
                 {/* circle */}
 
-                <motion.svg  
-                className=" w-[300px] xl:w-[466px] md:w-[466px] h-[300px] xl:h-[466px] md:h-[466px]" 
-                fill=" transparent"
+                <motion.svg
+                className=" w-full h-full absolute"
+                fill="transparent"
                 viewBox="0 0 506 506"
                 xmlns="http://www.w3.org/2000/svg"
                 >
@@ -45,7 +45,7 @@ const Image = () => {
                     />
                 </motion.svg>
             </motion.div>
-            
+
         </div>
     );
 };
