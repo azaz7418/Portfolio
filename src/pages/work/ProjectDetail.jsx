@@ -2,56 +2,9 @@ import { useParams, Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import { BsArrowUpRight, BsGithub } from "react-icons/bs";
 import { Tooltip } from "antd";
+import { projects } from "../../utilities/Utilites";
 
-const projects = [
-  {
-    num: "01",
-    category: "Mess Metrics",
-    title: "Project 1",
-    description:
-      "Developed a system with custom authentication and authorization. Only the manager has access to perform CRUD operations on all members' data. The system allows the manager to add or remove members and calculate monthly accounts.",
-    stack: [
-      { name: "Bootstrap" },
-      { name: "Css 3" },
-      { name: "React.js" },
-      { name: "React Router" },
-      { name: "Express" },
-      { name: "Mongo and Mongoose" },
-    ],
-    image: "/assets/work/thumb1.png",
-    live: "https://mess-metrics.netlify.app/",
-    gitHub: "",
-  },
-  {
-    num: "02",
-    category: "Frontend",
-    title: "Project 2",
-    description:
-      "A React-based movie/TV show browsing application with modern UI components. Features categorized navigation for movies/TV shows with sub-menus and search functionality. Uses React Router for navigation, Tailwind CSS for styling, and Redux for state management.",
-    stack: [
-      { name: "React.js" },
-      { name: "Tailwind.css" },
-      { name: "Redux" },
-    ],
-    image: "/assets/work/thumb2.png",
-    live: "https://movie-review-task.netlify.app/",
-    gitHub: "https://github.com/azaz7418/Movie-Review",
-  },
-  {
-    num: "03",
-    category: "Frontend",
-    title: "Project 3",
-    description: "Lorem ipsum dolor sit amet consectetur adipisicing elit. Itaque laborum, distinctio expedita dign",
-    stack: [
-      { name: "React.js" },
-      { name: "Tailwind.css" },
-      { name: "Node.js" },
-    ],
-    image: "/assets/work/thumb3.png",
-    live: "",
-    gitHub: "",
-  },
-];
+
 
 const ProjectDetail = () => {
   const { id } = useParams();
