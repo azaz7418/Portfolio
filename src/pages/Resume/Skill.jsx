@@ -1,6 +1,7 @@
 import { Tooltip } from "antd";
 import { FaCss3, FaFigma, FaHtml5, FaJs, FaNodeJs, FaReact } from "react-icons/fa";
 import { SiTailwindcss } from "react-icons/si";
+import { TbBrandNextjs } from "react-icons/tb";
 
 const skills = {
   title: "My Skills",
@@ -24,8 +25,8 @@ const skills = {
       name: "React.js",
     },
     {
-      icon: <FaReact />,
-      name: "React.js",
+      icon: <TbBrandNextjs />,
+      name: "Next.js",
     },
     {
       icon: <SiTailwindcss />,
